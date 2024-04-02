@@ -1,0 +1,12 @@
+<div>
+  <strong>Filme:</strong> <%= @movie.title%> <br>
+  <strong>Ano de Lançamento:</strong> <%= @movie.year%> <br>
+  <strong>Duração:</strong> <%= @movie.duration%>min <br>
+  <strong>Diretor:</strong> <%= link_to @movie.director.name, @movie.director%> <br>
+  <strong>Gênero:</strong> <%= link_to @movie.genre.name, @movie.genre%> <br>
+  <strong>Sinopse:</strong> <%= @movie.sinopsis%> <br>
+</div>
+<br><br>
+<div><%= link_to 'Editar filme', edit_movie_path %></div>
+<div><%= link_to 'Voltar', movies_path %></div>
+

@@ -1,0 +1,9 @@
+<div>Gêneros cadastrados:</div>
+<br>
+<% @genres.each do |g| %>
+<div><%= link_to g.name, g %></div>
+<% end %>
+<br>
+
+
+<div><%= link_to 'Adicionar Gênero', new_genre_path %></div>

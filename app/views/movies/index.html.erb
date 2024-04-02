@@ -1,0 +1,8 @@
+<div>Todos os Filmes:</div>
+<br>
+<% @movies.each do |m| %>
+<div><%= link_to m.title, m %> (<%= link_to m.year, m %>)</div>
+<% end %>
+<br>
+
+<div><%= link_to 'Adicionar Filme', new_movie_path %></div>

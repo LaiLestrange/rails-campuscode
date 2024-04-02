@@ -1,0 +1,8 @@
+<div>Diretores cadastrados:</div>
+<br>
+<% @directors.each do |d| %>
+<div><%= link_to d.name, d %></div>
+<% end %>
+<br>
+
+<div><%= link_to 'Adicionar Diretor', new_director_path %></div>

@@ -1,0 +1,12 @@
+<%= form_with model: @genre do |f| %>
+  <div>
+    <%= f.label "Novo gênero de filmes:" %>
+    <%= f.text_field :name %>
+  </div>
+
+  <%= f.submit 'Adicionar' %>
+<% end %>
+<br>
+<div><%= link_to 'Voltar', genres_path %></div>
+
+
